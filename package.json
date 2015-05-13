@@ -1,0 +1,20 @@
+{
+  "name": "Surveys3.0",
+  "version": "1.0.0",
+  "description": "A prototype surveys application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.3.1",
+    "ejs-locals": "^1.0.2",
+    "express": "^4.12.3",
+    "fortune": "^0.2.4",
+    "fortune-mongodb": "^0.2.2",
+    "gulp": "^3.8.11"
+  }
+}

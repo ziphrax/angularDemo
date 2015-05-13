@@ -1,0 +1,47 @@
+<html ng-app="app">
+<head>
+	<title>Surveys 3.0</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body ng-controller="appCtrl">
+
+
+	<div class="container">
+
+			<div class="row">
+					<div class="col-xs-12">
+						<h1>{{title}}</h1>
+					</div>
+			</div>
+
+			<div class="row">
+					<div ng-controller="surveysCtrl" class="col-xs-12">
+						<p>Hello, World! </p>
+						<ul>
+							<li ng-repeat="survey in surveys">{{survey.name}}</li>
+						</ul>
+						<form>
+							<div class="form-group">
+								<div class="col-xs-1">
+									<label for="surveyName">Name</label>
+								</div>
+								<div class="col-xs-10">
+									<input id="surveyName" type="text" ng-model="surveyName" class="form-control" />
+								</div>
+								<div class="col-xs-1"><button ng-click="addSurvey()" class="btn btn-primary">Add</button></div>
+							</div>
+
+						</form>
+
+					</div>
+			</div>
+
+	</div>
+
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<script src="main.js"></script>
+
+</body>
+</html>
